@@ -1,0 +1,429 @@
+*{
+	margin-bottom: 0;
+	padding: 0;
+}
+body{
+/*	background-color: #f3f3f3;
+*/
+font-family: 微软雅黑；
+}
+/*margin是指从自身边框到另一个容器边框之间的距离，就是容器外距离。
+padding是指自身边框到自身内部另一个容器边框之间的距离，就是容器内距离。*/
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.title_bg {
+	background:url(../images/title_bg2.jpg);
+    height: 10x;
+    line-height: 30px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+div#logo{
+	display: inline-block;
+	/*块级元素变为内联元素，就可以在一行了*/
+	vertical-align: top;
+    /*	垂直 对齐*/	
+    width: 550px;
+    height: 160px;
+}
+div#sousuo{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 65px;
+	text-align: right;
+}
+input[type="text"]{
+	border: solid 1px #ccc;
+	height: 25px;
+	line
+	-height: 25px;
+	font-size: 13px;
+	padding-left: 4px;
+	width: 150px;
+	vertical-align: top;
+}
+input[type="submit"]{
+	background-color: #3598db;
+	vertical-align: top;
+	color: #fff;
+	height: 26px;
+	font-size: 13px;
+    border: solid 1px #3598db;
+    padding: 0 3px;
+}
+div#nav{
+	background-color: #3598db;
+	height: 50px;
+}
+div#nav nav li{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+    border-right: solid 1px #2f89c5;
+    -webkit-transition:background 1s linear;
+/*    兼容-背景色渐变效果*/
+}
+div#nav nav li.on,div#nav nav li:hover{
+	background-color: #2f89c5;
+}
+div#nav nav a{
+	color: #ffffff;
+	text-decoration: none;
+}
+div#lbt img{
+    width: 700px;
+    height: 300px;
+}
+div#body_wrapper{
+	margin-top: 15px;
+	margin-left: 175px;
+}
+div#body_wrapper article{
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+div#body_wrapper aside{
+    background-color: #fff;
+    width: 350px;
+    display: inline-block;
+
+}
+section#xinwen{
+    margin-top: 5px;
+}
+section#xinwen h2 a{
+	color: #444444;
+	/*改颜色；*/
+	text-decoration: none;
+	/*去掉下划线*/
+	font-size: 25px;
+
+}
+section#xinwen li{
+	display: inline-block;
+	/*将前面的小圆点去掉；*/
+	width: 100%;
+	vertical-align: bottom;
+	margin-top: 10px;
+}
+
+section#xinwen ul li a{
+	display: inline-block;
+	vertical-align: top;
+	height: 278px;
+}
+section#xinwen li a.ms{
+    width: 227px;
+    position: relative;
+    background: rgb(53,152,220);
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+a.ms h3{
+	text-indent: 25px;
+	border-bottom: solid 1px #fff;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	/*overflow: hidden;
+	隐藏溢出；*/
+}
+a.ms p{
+	text-indent: 32px;
+	/*缩进；*/
+	height: 278px;
+	overflow: hidden;
+	/*当高度超出278px的时候自动隐藏；*/
+}
+.sjx{
+	width: 20px;
+	height: 20px;
+    background: rgb(53,152,220);
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    transform:rotate(45deg);
+    /*正方形旋转45度；*/
+}
+
+/*集团活动
+*/
+section#huodong{
+	margin-top: 10px;
+}
+section#huodong h2 a{
+	color: #444444;
+	/*改颜色；*/
+	text-decoration: none;
+	/*去掉下划线*/
+	font-size: 25px;
+}
+section#huodong_a li{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+section#huodong_a li img{
+	height: 125px;
+	width: 165px;
+}
+section#huodong_b{
+    width: 512px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+section#huodong_b li:before{
+	content: counter(listxh);
+/*	内容 计数器（listxh）*/
+    background: #444;
+    padding: 2px 6px;
+    color: #fff;
+    margin-right: 5px;
+}
+section#huodong_b li{
+	counter-increment: listxh;
+/*	属性设置某个选取器每次出现的计数器增量。默认增量是 1。
+*/
+	display: inline-block;
+	width: 100%;
+	vertical-align: bottom;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+/*	超出的部分用...代替*/  
+    margin-top: 18px;
+    -webkit-transition:text-shadow 1s linear;
+
+
+}
+section#huodong_b li:first-child:before,section#huodong_b li:nth-child(2):before,section#huodong_b li:nth-child(3):before{
+   background: #3598dc;
+}
+section#huodong_b li:last-child:before{
+	padding: 2px 3px;
+	font-size: 14px;
+}
+section#huodong_b a{
+	color: #444444;
+	text-decoration: none;
+
+}
+section#huodong_b li:hover{
+	text-shadow:2px 7px 9px #000;
+	/*文字阴影；*/
+}
+section#huodong_c{
+    width: 150px;
+    display: inline-block;
+}
+
+section#huodong_c li{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+section#huodong_c li img{
+	height: 200px;
+	width: 165px;
+
+}
+section#bowen a{
+	color: #444444;
+	text-decoration: none;
+
+}
+
+section#bowen_a li{
+	display: inline-block;
+	vertical-align: top;
+	width: 175px;
+	height: 136px;
+	text-align: center;
+
+}
+section#bowen_a a{
+	color: #444;
+	text-decoration: none;
+}
+section#bowen_a img,section#bowen_b img{
+	height: 130px;
+	width: 170px;
+
+}
+section#bowen_b li:before{
+	content: counter(listxh);
+/*	内容 计数器（listxh）*/
+    background: #3598db;
+    padding: 2px 6px;
+    color: #fff;
+    margin-right: 5px;
+}
+section#bowen_b li{
+	counter-increment: listxh;
+/*	属性设置某个选取器每次出现的计数器增量。默认增量是 1。
+*/
+	display: inline-block;
+	width: 100%;
+	vertical-align: bottom;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+/*	超出的部分用...代替*/  
+    margin-top: 15px;
+    -webkit-transition:text-shadow 1s linear;
+}
+section#bowen_b li:hover{
+	text-shadow:2px 7px 9px #000;
+	/*文字阴影；*/
+}
+section#bowen_b a{
+	color: #444444;
+	text-decoration: none;
+
+}
+section#zhaopin{
+	margin-top: 20px;
+}
+section#zhaopin li:before{
+	content: counter(listxh);
+/*	内容 计数器（listxh）*/
+    background: #3598db;
+    padding: 2px 6px;
+    color: #fff;
+    margin-right: 5px;
+}
+section#zhaopin li{
+	counter-increment: listxh;
+/*	属性设置某个选取器每次出现的计数器增量。默认增量是 1。
+*/
+	display: inline-block;
+	width: 100%;
+	vertical-align: bottom;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+/*	超出的部分用...代替*/  
+    margin-top: 15px;
+    -webkit-transition:text-shadow 1s linear;
+}
+section#zhaopin li:hover{
+	text-shadow:2px 7px 9px #000;
+	/*文字阴影；*/
+}
+section#zhaopin a{
+	color: #444444;
+	text-decoration: none;
+}
+section#zhaopin li:last-child:before{
+	padding: 2px 3px;
+	font-size: 14px;
+}
+section#lianxi{
+	margin-top: 20px;
+}
+section#lianxi a{
+	color: #444444;
+	text-decoration: none;
+}
+section#lianxi img{
+	width: 350px;
+	height: 200px;
+}
+
+section#zigongsi a{
+	color: #444444;
+	text-decoration: none;
+}
+section#zigongsi img{
+	width: 140px;
+	height: 80px;
+}
+section#zigongsi li{
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+section#zigongsi li h4{
+	font-size: 25px;
+	height: 28px;
+    line-height: 28px;
+    margin:0;
+}
+/*.zgsjj:hover{
+	border: solid 1px #3598db;
+	padding: 10px 3px;
+}*/
+.ss:hover{
+	border: solid 1px #3598db;
+	padding: 5px 15px 0;
+}
+.ss{
+	-webkit-transition: padding 0.1s linear;
+}
+.zgsjj a{
+	display: inline-block;
+	vertical-align: top;
+}
+/*.zgsjj a:first-child{
+    color: #444;
+    text-decoration: none;
+    width: 170px;
+}
+*/.zgsjj a:last-child{
+	width: 190px;
+	font-size: 20px;
+	height: 80px;
+	overflow: hidden; 
+	margin-left: 11px;
+	text-align: right;
+	overflow: hidden;
+/*	white-space: nowrap;不换行；*/	
+    text-overflow:ellipsis;
+}
+#footer_wrapper{
+	background-color: #3598db;
+	margin-top: 20px;
+	padding-top: 5px;
+	margin-bottom: 50px;
+}
+#footer_wrapper footer{
+	text-align: center;
+}
+#footer_wrapper li{
+	display: inline-block;
+	vertical-align: top;
+	border-right: solid 1px #fff;
+	padding:0 18px 0 18px;
+}
+#footer_wrapper a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+#footer_wrapper p{
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
