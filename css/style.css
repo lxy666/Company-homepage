@@ -3,8 +3,6 @@
 	padding: 0;
 }
 body{
-/*	background-color: #f3f3f3;
-*/
 font-family: 微软雅黑；
 }
 /*margin是指从自身边框到另一个容器边框之间的距离，就是容器外距离。
@@ -37,8 +35,7 @@ div#sousuo{
 input[type="text"]{
 	border: solid 1px #ccc;
 	height: 25px;
-	line
-	-height: 25px;
+	line-height: 25px;
 	font-size: 13px;
 	padding-left: 4px;
 	width: 150px;
