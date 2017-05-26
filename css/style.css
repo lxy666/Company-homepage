@@ -20,11 +20,9 @@ padding是指自身边框到自身内部另一个容器边框之间的距离，�
 }
 div#logo{
 	display: inline-block;
-	/*块级元素变为内联元素，就可以在一行了*/
 	vertical-align: top;
-    /*	垂直 对齐*/	
-    width: 550px;
-    height: 160px;
+        width: 550px;
+        height: 160px;
 }
 div#sousuo{
 	display: inline-block;
