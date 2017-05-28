@@ -5,8 +5,7 @@
 body{
 font-family: 微软雅黑；
 }
-/*margin是指从自身边框到另一个容器边框之间的距离，就是容器外距离。
-padding是指自身边框到自身内部另一个容器边框之间的距离，就是容器内距离。*/
+
 .container{
 	width: 1000px;
 	margin: 0 auto;
@@ -92,15 +91,12 @@ section#xinwen{
 }
 section#xinwen h2 a{
 	color: #444444;
-	/*改颜色；*/
 	text-decoration: none;
-	/*去掉下划线*/
 	font-size: 25px;
 
 }
 section#xinwen li{
 	display: inline-block;
-	/*将前面的小圆点去掉；*/
 	width: 100%;
 	vertical-align: bottom;
 	margin-top: 10px;
@@ -132,7 +128,6 @@ a.ms p{
 	/*缩进；*/
 	height: 278px;
 	overflow: hidden;
-	/*当高度超出278px的时候自动隐藏；*/
 }
 .sjx{
 	width: 20px;
@@ -152,9 +147,7 @@ section#huodong{
 }
 section#huodong h2 a{
 	color: #444444;
-	/*改颜色；*/
 	text-decoration: none;
-	/*去掉下划线*/
 	font-size: 25px;
 }
 section#huodong_a li{
