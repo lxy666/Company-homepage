@@ -120,12 +120,9 @@ a.ms h3{
 	border-bottom: solid 1px #fff;
 	padding-bottom: 5px;
 	margin-bottom: 5px;
-	/*overflow: hidden;
-	隐藏溢出；*/
 }
 a.ms p{
 	text-indent: 32px;
-	/*缩进；*/
 	height: 278px;
 	overflow: hidden;
 }
@@ -264,13 +261,11 @@ section#bowen_b li{
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow:ellipsis;
-/*	超出的部分用...代替*/  
     margin-top: 15px;
     -webkit-transition:text-shadow 1s linear;
 }
 section#bowen_b li:hover{
 	text-shadow:2px 7px 9px #000;
-	/*文字阴影；*/
 }
 section#bowen_b a{
 	color: #444444;
